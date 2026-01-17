@@ -4,17 +4,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0f2027;
-  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(135deg, #141e30, #243b55);
   font-family: Arial, sans-serif;
 }
 
-.clock {
+.clock-container {
+  text-align: center;
   color: #00ffcc;
-  font-size: 60px;
-  letter-spacing: 3px;
   background: rgba(0, 0, 0, 0.4);
-  padding: 25px 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+  padding: 30px 40px;
+  border-radius: 15px;
+}
+
+.date-day {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.clock {
+  font-size: 55px;
+  letter-spacing: 3px;
+}
+
+.ampm {
+  font-size: 22px;
+  margin-left: 8px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.toggle-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #00ffcc;
+  color: #000;
 }
