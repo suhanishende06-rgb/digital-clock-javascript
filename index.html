@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Digital Clock</title>
+  <title>Advanced Digital Clock</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="clock">
-    <span id="hours">00</span> :
-    <span id="minutes">00</span> :
-    <span id="seconds">00</span>
+  <div class="clock-container">
+    <div class="date-day" id="dateDay">Loading...</div>
+
+    <div class="clock">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+      <span id="ampm" class="ampm">AM</span>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleFormat()">
+      Switch to 24-Hour
+    </button>
   </div>
 
   <script src="script.js"></script>
